@@ -19,6 +19,8 @@ class DonationController extends Controller
             'message' => 'Data donations berhasil diambil',
             'data' => Donation::all(),
         ];
+        return response()->json($data);
+        // return Donation::all();
     }
 
     /**
